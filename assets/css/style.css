@@ -4,12 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 
 }
 
-h6{
-    font-family: "JetBrains Mono",monospace !important;
+h6 {
+    font-family: "JetBrains Mono", monospace !important;
 }
+
 html {
     height: 100vh;
 }
@@ -18,30 +20,20 @@ body {
     background-image: linear-gradient(to right top, #b39cd0, #a37ed8, #9060df, #773fe5, #5412eb);
     background-repeat: no-repeat;
     background-size: auto;
+    
 }
 
-h6:hover,h3:hover, span:hover{
+h6:hover,
+h3:hover,
+span:hover {
     color: #5412eb;
 }
 
-.card{
+.card {
     border: 0 !important;
 }
 
-#Progress_Status { 
-    width: 50%; 
-    background-color: #ddd; 
-  } 
-    
-  #myprogressBar { 
-    width: 1%; 
-    height: 35px; 
-    background-color: #4CAF50; 
-    text-align: center; 
-    line-height: 32px; 
-    color: black; 
-  } 
-  
+
 .button-30 {
     align-items: center;
     width: 50rem;
@@ -89,3 +81,62 @@ h6:hover,h3:hover, span:hover{
     transform: translateY(2px);
 }
 
+body {
+    text-align: center;
+    padding: 20px;
+}
+
+.social {
+    padding: 30px ;
+    display: inline;
+}
+
+.social a {
+    border: 2px solid #414345;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 50%;
+    color: #414345;
+    display: inline-block;
+    height: 42px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    width: 42px;
+
+}
+
+.social a:hover {
+    /* if hover broken this image link is probably broken 😞 */
+    background: url(https://img.freepik.com/free-vector/space-with-stars-universe-space-infinity-background_78474-99.jpg?size=626&ext=jpg);
+    transition: background 0.2s;
+    --webkit-animation: bgscroll 200s infinite linear;
+    --ms-animation: bgscroll 200s infinite linear;
+    --o-animation: bgscroll 200s infinite linear;
+    border: 2px solid #414345;
+    color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+@keyframes bgscroll {
+    0% {
+        background-position: 0 0;
+    }
+
+    25%,
+    75% {
+        background-position: -2506px 2000px;
+    }
+
+    50% {
+        background-position: 2000px -2000;
+    }
+
+    100% {
+        background-position: 1000 0;
+    }
+}
+
+.icon {
+    font-size: 40px;
+}
